@@ -1,0 +1,36 @@
+.container {
+  max-width: 120rem;
+  border: 0.1rem solid grey;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9rem;
+}
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+#shop-now-btn {
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  /* background-color: white;
+    color: #659DBD; */
+  background-color: #659dbd;
+  color: white;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.hero-section-data {
+  margin: 1rem 5rem;
+}
+.intro-data {
+  color: #659dbd;
+  font-weight: 700;
+}
+.hero-section-image {
+  border: 0.1rem solid grey;
+}

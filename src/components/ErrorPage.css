@@ -1,0 +1,16 @@
+.error-box{
+width: 100%;
+height: 59.8vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+#go-back-btn{
+    padding: 0.5rem 1.2rem;
+    margin-top: 1.5rem;
+    background-color: #569BDB;
+    color: white;
+    border: 0.1rem solid #569BDB;
+    cursor: pointer;
+}

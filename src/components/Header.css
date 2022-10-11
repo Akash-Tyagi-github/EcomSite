@@ -1,0 +1,120 @@
+.navbar {
+  width: 100%;
+  height: 4rem;
+  /* border: 0.1rem solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #659DBD;
+}
+.logo-img {
+  width: 12rem;
+  height: 3rem;
+  border: 0.1rem solid white;
+  margin-left: 3rem;
+}
+.navbar-list {
+  list-style: none;
+  display: flex;
+}
+.navbar-link {
+    color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar-link:hover {
+  color: blue;
+  cursor: pointer;
+}
+.cart-trolley-link {
+  position: relative;
+}
+.cart-trolley {
+  position: relative;
+}
+.cart-total-item {
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  top: -30%;
+  left: 70%;
+  font-size: 0.5rem;
+}
+.mobile-navbar-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+.close-outline {
+  display: none;
+}
+
+/* ----------- Media query ------------------- */
+@media only screen and (max-width: 400px) {
+  .mobile-navbar-btn {
+    display: inline-block;
+    z-index: 9999;
+    border: black;
+  }
+  .mobile-nav-icon {
+    font-size: 1rem;
+    color: black;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .active .mobile-nav-icon {
+    display: none;
+    font-size: 1rem;
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    color: black;
+    z-index: 9999;
+  }
+  .active .close-outline {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  .navbar-list {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    visibility: hidden;
+    opacity: 0;
+    /* transform: translateX(100%); */
+    /* transform-origin: top; */
+    /* transition: all 3s linear; */
+  }
+  .active .navbar-list {
+    visibility: visible;
+    opacity: 1;
+    /* transform: translateX(0); */
+    z-index: 999;
+    /* transform-origin: right; */
+    /* transition: all 3s linear; */
+  }
+  .navbar-list li {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+}
